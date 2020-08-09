@@ -1,0 +1,26 @@
+.underline{
+    text-decoration: underline ;
+    letter-spacing: 3px;
+}
+#font{
+    font-size: 26px;
+}
+.line-through{
+    text-decoration: line-through;
+}
+#font1{
+    font-family: 'Lexend Zetta', sans-serif;
+    font-family: 'Rowdies', cursive;
+}
+.decor{
+    text-indent: 320px;
+}
+.decor1{
+    text-indent: 232px;
+    letter-spacing: 3px;
+}
+body{
+    background-image: url("Image/2 (1).jpg");
+}
+
+
