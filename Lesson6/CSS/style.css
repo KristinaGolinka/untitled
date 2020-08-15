@@ -1,0 +1,39 @@
+th.img::before{
+    content: url("../img/tick.svg");
+    margin-left: 20px;
+    display: block ;
+}
+th.img2::before{
+    content: url("../img/star.svg");
+    margin-left: 20px;
+    display: block ;
+}
+th.img3::before{
+    content: url("../img/triangle.svg");
+    margin-left: 8px;
+    display: block ;
+}
+th.img1::before{
+    content: url("../img/ilustracoes.svg");
+    margin-left: 20px;
+    display: block ;
+}
+th.img4::before{
+    content: url("../img/star1.svg");
+    margin-left: 20px;
+    display: block ;
+}
+th {
+    list-style: none;
+    font-size: 15px;
+}
+table{
+    width: 600px;
+    border: lightseagreen 14px double;
+    background-color: lightcyan;
+
+
+}
+
+
+
