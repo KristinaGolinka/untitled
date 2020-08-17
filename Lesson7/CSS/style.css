@@ -1,0 +1,42 @@
+body {
+    font-size: 13px;
+}
+
+#input {
+    font-size: 13px;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    width: 310px;
+}
+
+#input input, #input textarea {
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
+    padding: 5px;
+    width: 200px;
+    padding: 7px 7px 10px 40px;
+    font-size: 10px;
+
+}
+
+.activeField {
+    background-image: none;
+    background-color: lightgray;
+    border: solid 1px lightcyan;
+}
+
+.style {
+    border: solid 1px black;
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: lightyellow;
+}
+input#login{
+    background: url("../image/login.svg") no-repeat;
+}
+input#password{
+    background: url("../image/password.svg") no-repeat;
+}
+
+

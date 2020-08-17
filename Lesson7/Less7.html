@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson7</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<div id="input">
+    <form id="post" >
+        <label>Login:</label>
+        <input type="text" class="style" id="login" onblur="this.className='login'" onfocus="this.className='activeField'" />
+        <label>Password:</label>
+        <input type="password" class="style" id="password" onblur="this.className='password'" onfocus="this.className='activeField'" />
+        <label>E-mail:</label>
+        <input  type="text" class="style" id="E-mail" onblur="this.className='E-mail'" onfocus="this.className='activeField'" />
+        <label>Text:</label>
+        <textarea rows="4" cols="30" class="style" id="text" onblur="this.className='text'" onfocus="this.className='activeField'" ></textarea>
+        <input type="submit" value="OK" class="style" onblur="this.className='idle'" onfocus="this.className='activeField'" ></form>
+</div>
+
+</body>
+</html>
