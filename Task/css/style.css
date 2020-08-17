@@ -1,0 +1,71 @@
+header {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+ol , ul{
+    list-style: none;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+nav a{
+    text-decoration: none;
+    color : pink;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+nav a:hover{
+    color: lightsteelblue;
+
+}
+
+@font-face{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 25px;
+}
+span{
+    font-family: 'Do Hyeon', sans-serif;
+    size: 30px;
+}
+.column {
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+   background-color: lightpink;
+}
+.font{
+    font-family: 'Dancing Script', cursive;
+}
+.try button{
+    background-color: black;
+    border: 2px solid hotpink;
+    border-radius: 5px;
+    color: pink;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 150px;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+
+
