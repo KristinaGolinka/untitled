@@ -1,0 +1,55 @@
+/*1.Показати назву перквізника, який має фірму на вулиці Стрийська, 109*/
+SELECT * FROM carriers WHERE carriers_adress = 'Стрийська, 109';
+
+/*2.Міняємо назву колонки, тимчасово*/
+ SELECT manufacturers_id, manufacturers_name AS company FROM manufacturers;
+
+/*3.Показати конкретні поля*/
+SELECT manufacturers_id, manufacturers_name FROM manufacturers;
+
+/*4.Вибірка на різних назви виробників (ПОКАЗУЄ УНІКАЛЬНІ)*/
+SELECT DISTINCT manufacturers_name FROM manufacturers;
+
+/*5.Умова вибору (WHERE), для фільтрації запитів*/
+SELECT * FROM bus WHERE capacity >= 60 AND capacity <= 62;
+
+/*6.Сортувати за спаданням*/
+SELECT *  FROM drivers ORDER BY drivers_middle_name DESC;
+
+ /*7.Рейси які відправляються після 2020-12-25*/
+ SELECT * FROM trip WHERE departure > '2020-12-25';
+
+/*8. Показуємо повні імена пасажирів, і сортуємо їх за зростанням*/
+SELECT passengers_first_name, passengers_last_name, passengers_middle_name FROM passengers ORDER BY passengers_first_name ASC;
+
+/*9.Умова вибору (WHERE), для фільтрації запитів*/
+SELECT * FROM ticket WHERE prise >= 0  AND prise <= 6000;
+
+/*10.Показує скільки рядочкі в таблиці*/
+SELECT COUNT(*) AS number_of_records FROM carriers;
+
+
+/*11.Визначаємо середню ціну для білету*/
+SELECT AVG (prise) AS average_ticket_price FROM ticket;
+/*Знаходимо максимальну і мінімальну ціну і середню до них*/
+SELECT MAX(prise), MIN(prise), AVG (prise) AS average_ticket_price FROM ticket;
+
+/*12. Обмежуємо вибірку*/
+SELECT * FROM carriers LIMIT 2;
+
+/*13.Шукаємо в стрічці*/
+SELECT * FROM city WHERE city_name LIKE 'Л%';
+SELECT * FROM city WHERE city_name LIKE '%я';
+SELECT * FROM city WHERE city_name LIKE '%А%';
+SELECT * FROM city WHERE city_name LIKE 'Ф%т';
+
+
+/*14.Шукаємо пасажирів по id і Like*/
+ SELECT * FROM passengers WHERE passengers_id IN (1, 2, 4, 3) AND passengers_email LIKE '%com';
+
+
+
+
+
+
+
